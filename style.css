@@ -1,0 +1,81 @@
+/* Imports */
+@import url("https://fonts.google.com/specimen/Outfit");
+
+/* Varibles */
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+    --Font-size: 15px;
+}
+
+/* Global styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Outfit', Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--Light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100dvw;
+    height: 100dvh;
+}
+
+/* Card styles */
+.card {
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 88%;
+    height: fit-content;
+    max-width: 320px;
+    gap: 24px;
+    padding: 16px;
+    padding-bottom: 41px;
+    border-radius: 20px;
+    box-shadow:0px 0px 25px 0px #979797;
+}
+
+/* QR Code styles */
+.qr-code{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr-code img {
+    border-radius: 10px;
+    max-width: 288px;
+    max-height: 288px;
+}
+
+/* QR Code info styles */
+.qr-code-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 2px;
+}
+
+.qr-code-info h1 {
+    color: var(--Dark-blue);
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.qr-code-info p {
+    color: var(--Grayish-blue);
+    font-size: var(--Font-size);
+    font-weight: 400;
+    text-align: center;
+}
